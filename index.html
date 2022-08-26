@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onload="getTime(); setInterval('getTime()',1000)">
+    <div class="whole">
+      <section class="left">
+        <form class="js-form form">
+          <input type="text" placeholder="как тебя зовут?" />
+        </form>
+       
+        <h2 class="js-greetings greetings"></h2>
+        <div class="js-clock">
+          <a href="https://time.is/Moscow" id="time_is_link" rel="nofollow" style="font-size:36px;color:#FFF">Время в Москве:</a>
+          <span id="Moscow_z71d" style="font-size:36px;color:#FFF"></span>
+          <script src="//widget.time.is/t.js"></script>
+          <script>
+          time_is_widget.init({Moscow_z71d:{time_format:"hours:minutes"}});
+          </script>
+          
+          <h1>00:00:00</h1>
+      
+          <span class="js-weather"></span>
+        </div>
+  <div class="container_geo">
+          <div class="googleMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.9433656020524!2d44.763487615231625!3d41.78643417922959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446de731db8d41%3A0xf5f8193fdbfae0d8!2s16%20Melik-Surkhavi%20II%20Turn%2C%20T&#39;bilisi!5e0!3m2!1sru!2sge!4v1660903434316!5m2!1sru!2sge" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        
+      </section>
+      <section class="right">
+        <div class="list">
+          <form class="js-toDoForm">
+            <label for="writeList">Список дел:</label>
+            <input type="text" placeholder="Напиши задачу" id="writeList" />
+          </form>
+
+          <ul class="js-toDoList"></ul>
+        </div>
+      
+        </div>
+        <section class="center">
+
+        </section>
+        
+      </section>
+    </div>
+
+    <script type="text/javascript" src="clock.js"></script>
+    <script type="text/javascript" src="greeting.js"></script>
+    <script type="text/javascript" src="todo.js"></script>
+    <script type="text/javascript" src="background.js"></script>
+    <script type="text/javascript" src="weather.js"></script>
+</script>
+  </body>
+</html>
