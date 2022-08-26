@@ -1,12 +1,13 @@
-# Momentum
+# Task box
 ---
 ## Overview
-[Momentum app](https://jo-soyoung.github.io/momentum/) made with Vanilla JS
-
+Simple desktop app with to do list
 ## Features
 * [x] Clock
+* [x] Moscow time and local time 
 * [x] Username persistance
 * [x] To do list
-* [x] Random background image
 * [x] Weather with geolocation
 * [x] Responsive web
+* [x] Google Map
+* [x] Views of Tbilisi  
